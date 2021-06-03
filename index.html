@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="d_calculator">
+        <div id="d_display">
+            <p id="p_hist"></p>
+            <p id="p_result"></p>
+        </div>
+        <!--onmousedown evita que una vez clickeado un boton y luego presionar enter, vuelva a presionar el mismo boton  -->
+        <div id="d_buttons" onmousedown="button_click()">
+            <div id="d_buttons_left">
+                <button type="button" id="clear">C</button>
+                <button type="button" id="all_clear">AC</button>
+                <button type="button" id="operator_divide">/</button>
+                <button type="button" id="7">7</button>
+                <button type="button" id="8">8</button>
+                <button type="button" id="9">9</button>
+                <button type="button" id="4">4</button>
+                <button type="button" id="5">5</button>
+                <button type="button" id="6">6</button>
+                <button type="button" id="1">1</button>
+                <button type="button" id="2">2</button>
+                <button type="button" id="3">3</button>
+                <button type="button" id="0">0</button>
+                <button type="button" id="decimal_separator">.</button>
+            </div>
+            <div id="d_buttons_right">
+                <button type="button" id="operator_multiply">x</button>
+                <button type="button" id="operator_substract">-</button>
+                <button type="button" id="operator_add">+</button>
+                <button type="button" id="result">=</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<!-- Se declara siempre al final, para que pueda generarse los objetos anteriores -->
+<script src="calculator.js"></script>
+
+</html>

@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(138, 138, 138);
+}
+
+#d_calculator{
+    height: 320px;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: dimgray;
+    border-radius: 1em/1em;
+    border: 1px solid rgba(0, 191, 255, 0.63);
+    box-shadow: 0 0 1rem rgb(66, 66, 66);
+}
+
+p{
+    text-align: center;
+    color: gainsboro;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#d_display{
+    height: 30%;
+    border-bottom: 1px solid rgba(0, 191, 255, 0.63);
+    /*En caso de que se supere el ancho del display, mostrara un scroll*/
+    overflow: auto;
+    /*Oculta el eje y del scroll*/
+    overflow-y: hidden;
+    
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    height: 5px;
+  }
+
+/* Trackbar */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(141, 139, 139);
+    border-radius: 10px;
+  }
+
+#p_hist{
+    height: 30%;
+    font-size: 20px;
+    margin-bottom:2px;
+}
+
+#p_result{
+height: 70%;
+font-size: 40px;
+text-align: right;
+margin-top:2px;
+margin-bottom: 2px;
+margin-right: 10px;
+width: 100;
+
+}
+
+#d_buttons{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+    height: auto;    
+    
+    
+} 
+
+#d_buttons_left{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 22% 22% 22% 22% 22%;
+    width: 100%;
+    margin-left: 20px;
+    
+
+}
+
+#d_buttons_right{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 70%;   
+    margin-right: 20px;
+}
+
+button{
+    border-radius: 1em/1em;
+    border-color:rgba(0, 191, 255, 0.63);
+    margin: 6px;
+    background-color: dimgray;
+    color: gainsboro;   
+    font-size: 20px;
+    
+}
+
+
+#result{
+    height: 50px;
+}
